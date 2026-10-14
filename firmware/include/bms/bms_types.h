@@ -4,7 +4,9 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-#define BMS_CELL_COUNT 13u
+#ifndef BMS_CELL_COUNT
+#define BMS_CELL_COUNT 9u
+#endif
 #define BMS_TEMPERATURE_SENSOR_COUNT 3u
 
 typedef enum {
